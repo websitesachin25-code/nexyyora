@@ -1,6 +1,10 @@
 import Link from "next/link";
 import MobileMenus from "@/layout/headers/Menu/mobile-menus";
 import { useEffect, useState } from "react";
+import { socialMediaLinks } from "@/data/Links";
+import { phoneNumber } from "@/data/Links";
+import { emailAddress } from "@/data/Links";
+const { facebook, twitter, youtube, linkedIn, instagram } = socialMediaLinks;
 
 
 
@@ -55,15 +59,21 @@ const OffcanvasArea = ({ openCanvas, setOpenCanvas }: any) => {
 									<Link href="/contact" className="tp-btn w-100">Getting Started</Link>
 								</div>
 								<div className="offcanvas__contact mb-40">
-									<p className="offcanvas__contact-call"><a href="tel:+964-742-44-763">+964 742 44 763</a></p>
-									<p className="offcanvas__contact-mail"><a href="mailto:info@harry.com">info@seomy.com</a></p>
+									<p className="offcanvas__contact-call">
+										<a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+									</p>
+
+									<p className="offcanvas__contact-mail">
+										<a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+									</p>
+
 								</div>
 								<div className="offcanvas__social">
-									<a href="#"><i className="fab fa-facebook-f"></i></a>
-									<a href="#"><i className="fab fa-twitter"></i></a>
-									<a href="#"><i className="fab fa-youtube"></i></a>
-									<a href="#"><i className="fab fa-linkedin"></i></a>
-									<a href="#"><i className="fab fa-instagram"></i></a>
+									<a href={`https://www.facebook.com/people/${facebook}`}><i className="fab fa-facebook-f"></i></a>
+									<a href={`https://www.x.com/${twitter}`}><i className="fab fa-twitter"></i></a>
+									<a href={`https://www.youtube.com/@${youtube}`}><i className="fab fa-youtube"></i></a>
+									<a href={`https://www.linkedin.com/in/${linkedIn}`}><i className="fab fa-linkedin"></i></a>
+									<a href={`https://www.instagram.com/${instagram}`}><i className="fab fa-instagram"></i></a>
 								</div>
 							</div>
 						</div>

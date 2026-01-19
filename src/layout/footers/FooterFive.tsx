@@ -7,7 +7,7 @@ import Logo1 from "@/assets/img/logo/logo1.png"
 import PhoneIcon from "@/assets/img/icon/phone-icon.png";
 import { CopyRight, SocialLinksTwo } from "@/components/common/social-links";
 import AuditFooterLogo from "@/svg/logo/AuditFooterLogo";
-
+import { phoneNumber } from "@/data/Links";
 // footer five data type
 interface footer_five_content_type {
 	sm_des: string;
@@ -33,7 +33,7 @@ interface footer_five_content_type {
 // footer five content 
 const footer_five_content: footer_five_content_type = {
 	sm_des: "Best Award-winning SEO agency.!",
-	phone_number: "+91 99559 82901",
+	phone_number: phoneNumber,
 	btn_text: "Enquire Now",
 	work_title: "Information",
 	work_times: [
@@ -105,7 +105,7 @@ const FooterFive = ({ style, style_audit, style_2 }: any) => {
 											<p className="footer-widget-text mb-20">{sm_des}</p>
 											<div className="footer-widget-btn">
 												<div className="phone-call">
-													<a href="tel:0123456789">
+													<a href={`tel:${phone_number}`}>
 														<i><Image src={PhoneIcon} alt="theme-pure" /></i><span>{phone_number}</span>
 													</a>
 												</div>

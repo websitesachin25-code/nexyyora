@@ -9,6 +9,7 @@ import Phone from "@/svg/phone";
 import shape_1 from "@/assets/img/shape/form-shape-1.png";
 import shape_2 from "@/assets/img/shape/form-shape-2.png";
 import MouseParallax from "@/utils/MouseParallax";
+import { phoneNumber, emailAddress } from "@/data/Links";
 
 const contact_content = {
   sub_title: "Contact Us",
@@ -21,8 +22,8 @@ const contact_content = {
     {
       id: 1,
       icon: <Email />,
-      target: "mailto:nexyora@gmail.com",
-      text: "nexyora@gmail.com",
+      target: `mailto:${emailAddress}`,
+      text: emailAddress,
     },
     {
       id: 2,
@@ -33,8 +34,8 @@ const contact_content = {
     {
       id: 3,
       icon: <Phone />,
-      target: "tell:0123456789",
-      text: "+91 99559 82901",
+      target: `tel:${phoneNumber}`,
+      text: phoneNumber,
     },
   ],
   contact_title: "Send a message",
