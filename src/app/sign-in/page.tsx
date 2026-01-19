@@ -1,4 +1,5 @@
 import ScrollToTop from "@/components/common/scroll-to-top";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 import SignIn from "@/components/inner-pages/sign-in";
 import Wrapper from "@/layout/Wrapper";
 
@@ -10,6 +11,7 @@ const index = () => {
         <Wrapper>
             <SignIn />
             <ScrollToTop  />  
+            <WhatsAppButton/>
         </Wrapper>
     );
 };

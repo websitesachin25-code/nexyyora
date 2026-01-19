@@ -1,4 +1,5 @@
 import ScrollToTop from "@/components/common/scroll-to-top";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 import KeywordSearch from "@/components/services/keyword-search";
 import Wrapper from "@/layout/Wrapper";
 
@@ -11,6 +12,7 @@ const index = () => {
         <Wrapper>
             <KeywordSearch />
             <ScrollToTop style={false} />
+            <WhatsAppButton/>
         </Wrapper>
     );
 };

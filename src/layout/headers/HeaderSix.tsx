@@ -6,6 +6,7 @@ import HeaderSixLogo from "@/svg/logo/header_6";
 import ServiceHeaderLogo from "@/svg/logo/service_header_logo";
 import OffcanvasArea from "@/components/common/OffcanvasArea";
 import useSticky from "@/hooks/use-sticky";
+import Logo from "@/assets/img/logo/logo.png"
 
 const HeaderSix = ({ style }: any) => {
 	const { sticky } = useSticky()
@@ -20,15 +21,23 @@ const HeaderSix = ({ style }: any) => {
 							<div className="row align-items-center">
 								<div className="col-xl-2 col-lg-6 col-sm-4 col-6">
 									<div className="tplogo__area">
-										{sticky ?
+										<Link href="/">
+												<span>
+													{/* <LogoHomeOne /> */}
+										<img src={Logo.src} alt="logo" className="w-full h-full flex-1"/>
+												</span>
+											</Link>
+										{/* {sticky ?
+
 											<Link href="/" className="sticky-logo">
 												<span>  <HeaderSixLogo /> </span>
+												
 											</Link>
 											:
 											<Link href="/" className="header-logo">
 												<span> {style ? <ServiceHeaderLogo /> : <HeaderSixLogo />} </span>
 											</Link>
-										}
+										} */}
 									</div>
 								</div>
 								<div className="col-xl-7  d-none d-xl-block">
@@ -41,9 +50,9 @@ const HeaderSix = ({ style }: any) => {
 								<div className="col-xl-3 col-lg-6 col-sm-8 col-6">
 									<div className={`tpheader__right ${style ? "tpheader__right-white" : ""} d-flex align-items-center justify-content-end`}>
 										<div className="d-flex align-items-center">
-											<div className="tpheader__sign d-none d-md-block">
+											{/* <div className="tpheader__sign d-none d-md-block">
 												<Link href="/sign-in">Sign in</Link>
-											</div>
+											</div> */}
 											<div className="tpheader__btn ml-25 d-none d-md-block">
 												<Link href="/contact" className="tp-header-btn">Chat Now</Link>
 											</div>
