@@ -31,7 +31,7 @@ const Count = ({ number, text, add_style, type }: CountType) => {
             <InView
               as="span"
               onChange={(inView: any) => visibleChangeHandler(inView)}>
-              {text && <span>{text}</span>} <span>{type == "count"? "+" : "%"}</span> 
+              {text && <span>{text}</span>} <span>{type == "count"? "" : "%"}</span> 
             </InView>
           </div>
         )}
