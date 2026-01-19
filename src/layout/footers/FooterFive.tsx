@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeaderSixLogo from "@/svg/logo/header_6";
 import FooterFiveLogo from "@/svg/logo/FooterFiveLogo";
+import Logo1 from "@/assets/img/logo/logo1.png"
 import PhoneIcon from "@/assets/img/icon/phone-icon.png";
 import { CopyRight, SocialLinksTwo } from "@/components/common/social-links";
 import AuditFooterLogo from "@/svg/logo/AuditFooterLogo";
@@ -86,13 +87,19 @@ const FooterFive = ({ style, style_audit, style_2 }: any) => {
 									<div className="footer-widget footer-5-col-1 mb-40">
 										<div className="footer-widget-logo mb-20">
 											<Link href="/">
+												<span >
+													<img src={Logo1.src} alt="logo" className="w-full h-full flex-1" />
+												</span>
+
+											</Link>
+											{/* <Link href="/">
 												<span>
 													{style_audit ? <AuditFooterLogo />
 														:
 														<>{style ? <HeaderSixLogo /> : <FooterFiveLogo />}</>
 													}
 												</span>
-											</Link>
+											</Link> */}
 										</div>
 										<div className="footer-widget-content">
 											<p className="footer-widget-text mb-20">{sm_des}</p>
@@ -103,7 +110,7 @@ const FooterFive = ({ style, style_audit, style_2 }: any) => {
 													</a>
 												</div>
 												<div className="submit-call">
-													<button className="light-blue-btn">{btn_text}</button>
+													<button className="submit-call-btn">{btn_text}</button>
 												</div>
 											</div>
 										</div>

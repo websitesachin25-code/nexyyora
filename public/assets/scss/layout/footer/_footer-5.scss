@@ -213,10 +213,14 @@
     }
 }
 .footer-inner {
-    & .light-blue-btn {
+    & .submit-call-btn {
+        color: var(--tp-common-white);
         background-color: var(--tp-theme-primary);
+        border-radius: 10px;
+
         &:hover {
             background-color: transparent;
+            background: var(--tp-heading-primary);
         }
     }
     & .footer-bottom-5 .footer-widget-social a:hover i {

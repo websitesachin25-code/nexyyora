@@ -2,11 +2,10 @@
 import Link from "next/link";
 import { useState } from "react"; 
 import NavMenu from "./Menu/nav-menu";
-import LogoHomeOne from "@/svg/logo/LogoHomeOne";
 import OffcanvasArea from "@/components/common/OffcanvasArea";
 import useSticky from "@/hooks/use-sticky";
 import Logo from "@/assets/img/logo/logo.png"
-import Image from "next/image";
+
 const HeaderOne = () => {
 	const { sticky } = useSticky()
 	const [openCanvas, setOpenCanvas] = useState(false)
@@ -25,7 +24,6 @@ const HeaderOne = () => {
 										<div className="tplogo__area">
 											<Link href="/">
 												<span>
-													{/* <LogoHomeOne /> */}
 										<img src={Logo.src} alt="logo" className="w-full h-full flex-1"/>
 												</span>
 											</Link>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SeomyLogo from "@/svg/seomy_logo";
+import Logo1 from "@/assets/img/logo/logo1.png";
 import SubscribeForm from "@/components/forms/SubscribeForm";
 import SocialLinks, { CopyRight } from "@/components/common/social-links";
 
@@ -62,8 +62,12 @@ const FooterOne = () => {
                 <div className="col-lg-3 col-md-6">
                   <div className="footer-widget footer-col-1 mb-40">
                     <div className="footer-widget-logo mb-20">
+
                       <Link href="/">
-                        <SeomyLogo />
+                        <span >
+                          <img src={Logo1.src} alt="logo" className="w-full h-full flex-1" />
+                        </span>
+
                       </Link>
                     </div>
                     <div className="footer-widget-content">
@@ -108,8 +112,8 @@ const FooterOne = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="footer-widget-copyright text-center">
-                    <span> 
-                      <CopyRight /> 
+                    <span>
+                      <CopyRight />
                     </span>
                   </div>
                 </div>

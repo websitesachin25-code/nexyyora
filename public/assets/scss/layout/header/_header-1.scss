@@ -404,7 +404,7 @@
         color: var(--tp-common-white);
         font-family: var(--tp-ff-jakarta);
         &:hover {
-            background-color: #4f091c;
+            background-color: var(--tp-theme-light-blue);
             color: var(--tp-common-white);
         }
     }
